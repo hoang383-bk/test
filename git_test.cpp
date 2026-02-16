@@ -1,12 +1,12 @@
-#include <string.h>
+#include <string>
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
+using namespace std;
 int main()
 {
-    char *str = "Hello, World!";
+    string str = "Hello, World!";
     char buffer[20];
-    strncpy(buffer, str, sizeof(buffer) - 1);
-    buffer[sizeof(buffer) - 1] = '\0'; // Ensure null-termination
-    printf("%s\n", buffer);
+    cout<<str << endl;
     return 0;
 }
